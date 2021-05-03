@@ -1,7 +1,7 @@
 const clib = @cImport({
-    @cInclude("lua.h");
-    @cInclude("lualib.h");
-    @cInclude("lauxlib.h");
+    @cInclude("lua/src/lua.h");
+    @cInclude("lua/src/lualib.h");
+    @cInclude("lua/src/lauxlib.h");
 });
 
 export fn add(s: ?*clib.lua_State) c_int {

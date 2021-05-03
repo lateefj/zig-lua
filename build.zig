@@ -5,7 +5,7 @@ pub fn build(b: *Builder) void {
     const exe = b.addExecutable("lua_example", "main.zig");
     exe.setBuildMode(mode);
 
-    exe.linkSystemLibrary("c");
+    //exe.linkSystemLibrary("c");
     exe.addIncludeDir("lua-5.4.2/src");
 
     const lua_c_files = [_][]const u8{
